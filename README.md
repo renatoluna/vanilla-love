@@ -6,3 +6,5 @@ It's like one of that usual lab zones but dedicated only for Vanilla JS stuff ma
 
 #### Utils: ####
 * Map
+
+The [code pattern](https://github.com/renatoluna/oojavascript) used in this project
