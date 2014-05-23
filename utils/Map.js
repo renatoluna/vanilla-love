@@ -18,6 +18,24 @@
             return true;
         };
 
+        $public.sort = function (map, key) {
+            if (!$public.isValid()) {
+                return;
+            }
+
+            var compare = function (a, b) {
+                var key = key || Object.keys(map[0])[0];
+                if (a[key] < b[key]){
+                   return -1;
+                }
+                if (a[key] > b[key]){
+                  return 1;
+                }
+                return 0;
+            };
+            return map.sort(compare);
+        };
+
         return $protected;
     }
 
